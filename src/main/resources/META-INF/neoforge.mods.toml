@@ -15,12 +15,12 @@ Adds some friends to the game :)
 [[dependencies.spookyfriends]]
 modId="minecraft"
 type="required"
-versionRange="[26.1.1,)"
+versionRange="[26.1.2,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.spookyfriends]]
 modId="neoforge"
 type="required"
-versionRange="[26.1.1.0-alpha,)"
+versionRange="[26.1.2.71,)"
 ordering="NONE"
 side="BOTH"

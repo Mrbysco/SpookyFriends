@@ -21,7 +21,7 @@ public class SpookyRegistry {
 
 	public static final Supplier<EntityType<Friend>> FRIEND = ENTITIES.registerEntityType("friend",
 			Friend::new,
-			MobCategory.MISC,
+			MobCategory.AMBIENT,
 			builder -> builder
 					.sized(0.6F, 1.8F)
 					.eyeHeight(1.62F)
