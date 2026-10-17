@@ -6,6 +6,8 @@
 ## About ##
 Adds fake players that act like players to spook out players. Think placing blocks fighting imaginary mobs...
 
+This mod was made for SpookyJam 2026
+
 ## License ##
 * Spooky Friends is licensed under the MIT License
   - (c) 2026 Mrbysco, ShyNieke
