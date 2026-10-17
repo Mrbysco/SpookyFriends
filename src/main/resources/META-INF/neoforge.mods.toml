@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+issueTrackerURL="https://github.com/Mrbysco/SpookyFriends/issues"
+license="MIT"
+
+[[mods]]
+modId="spookyfriends"
+version="${file.jarVersion}"
+displayName="Spooky Friends"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/spooky-friends"
+authors="Mrbysco, ShyNieke"
+description='''
+Adds some friends to the game :)
+'''
+[[dependencies.spookyfriends]]
+modId="minecraft"
+type="required"
+versionRange="[26.1.1,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.spookyfriends]]
+modId="neoforge"
+type="required"
+versionRange="[26.1.1.0-alpha,)"
+ordering="NONE"
+side="BOTH"

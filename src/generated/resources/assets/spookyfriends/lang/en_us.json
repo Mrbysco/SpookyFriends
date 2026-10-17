@@ -1,0 +1,13 @@
+{
+  "entity.spookyfriends.friend": "Friend",
+  "spookyfriends.configuration.addWhitelistPlayers": "Add Whitelist Players",
+  "spookyfriends.configuration.addWhitelistPlayers.tooltip": "Add the players from the whitelist to the Friends list [default: true]",
+  "spookyfriends.configuration.blockChance": "Block Chance",
+  "spookyfriends.configuration.blockChance.tooltip": "The chance for a Friend to spawn with block(s) [default: 0.5]",
+  "spookyfriends.configuration.blocks": "Blocks",
+  "spookyfriends.configuration.blocks.tooltip": "A list of blocks and max amount a Friend can spawn with\nFormat: \"<block>,<max_amount>\" (optional)",
+  "spookyfriends.configuration.friend_settings": "Friends",
+  "spookyfriends.configuration.friend_settings.tooltip": "Friend Settings",
+  "spookyfriends.configuration.friends": "Friends",
+  "spookyfriends.configuration.friends.tooltip": "A list of users who can be chosen when it spawns a distant friend.\nFormat: \"<username>\" or \"<username>,<base64 texture>\" (optional)"
+}
