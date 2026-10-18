@@ -1,6 +1,7 @@
 package com.mrbysco.spookyfriends.entity;
 
 import com.mrbysco.spookyfriends.entity.goal.FakeFightGoal;
+import com.mrbysco.spookyfriends.entity.goal.FleeWhenLookedAtGoal;
 import com.mrbysco.spookyfriends.entity.goal.RandomPlaceBlockGoal;
 import com.mrbysco.spookyfriends.util.BlockData;
 import com.mrbysco.spookyfriends.util.FriendCache;
@@ -47,6 +48,7 @@ public class Friend extends Mob {
 	@Override
 	protected void registerGoals() {
 		this.goalSelector.addGoal(0, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new FleeWhenLookedAtGoal(this));
 		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FakeFightGoal(this));
 		this.goalSelector.addGoal(10, new RandomPlaceBlockGoal(this));

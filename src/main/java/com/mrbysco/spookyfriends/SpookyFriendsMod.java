@@ -22,6 +22,7 @@ public class SpookyFriendsMod {
 		container.registerConfig(ModConfig.Type.COMMON, SpookyConfig.commonSpec);
 
 		SpookyRegistry.ENTITIES.register(eventBus);
+		SpookyRegistry.ATTACHMENT_TYPES.register(eventBus);
 
 		if (dist.isClient()) {
 			container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);

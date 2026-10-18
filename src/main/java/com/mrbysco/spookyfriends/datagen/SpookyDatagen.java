@@ -26,8 +26,8 @@ public class SpookyDatagen {
 				final BiomeModifier addSpawn = BiomeModifiers.AddSpawnsBiomeModifier.singleSpawn(
 						biomeHolderGetter.getOrThrow(BiomeTags.IS_OVERWORLD),
 						new Weighted<>(
-								new MobSpawnSettings.SpawnerData(SpookyRegistry.FRIEND.get(), 1, 2),
-								10
+								new MobSpawnSettings.SpawnerData(SpookyRegistry.FRIEND.get(), 1, 1),
+								1
 						)
 				);
 

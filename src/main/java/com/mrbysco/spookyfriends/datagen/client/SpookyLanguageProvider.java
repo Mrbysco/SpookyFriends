@@ -22,6 +22,8 @@ public class SpookyLanguageProvider extends LanguageProvider {
 		addConfig("addWhitelistPlayers", "Add Whitelist Players", "Add the players from the whitelist to the Friends list [default: true]");
 		addConfig("blockChance", "Block Chance", "The chance for a Friend to spawn with block(s) [default: 0.5]");
 		addConfig("blocks", "Blocks", "A list of blocks and max amount a Friend can spawn with\nFormat: \"<block>,<max_amount>\" (optional)");
+		addConfig("fakeStepsChance", "Fake Steps Chance", "Chance of fake footsteps while the player is underground (1 out of X, 0 to disable) [default: 1000]");
+		addConfig("fakeStepsCooldown", "Fake Steps Cooldown", "Cooldown in seconds between fake footsteps, plus a random extra of up to the same amount [default: 300]");
 	}
 
 	/**

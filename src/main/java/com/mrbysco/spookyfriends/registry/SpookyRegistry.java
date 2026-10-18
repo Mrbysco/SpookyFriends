@@ -1,6 +1,7 @@
 package com.mrbysco.spookyfriends.registry;
 
 import com.mrbysco.spookyfriends.SpookyFriendsMod;
+import com.mrbysco.spookyfriends.attachment.FakeSteps;
 import com.mrbysco.spookyfriends.entity.Friend;
 import net.minecraft.world.entity.Avatar;
 import net.minecraft.world.entity.EntityType;
@@ -9,15 +10,18 @@ import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.function.Supplier;
 
 @EventBusSubscriber
 public class SpookyRegistry {
 	public static final DeferredRegister.Entities ENTITIES = DeferredRegister.createEntities(SpookyFriendsMod.MOD_ID);
+	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, SpookyFriendsMod.MOD_ID);
 
 	public static final Supplier<EntityType<Friend>> FRIEND = ENTITIES.registerEntityType("friend",
 			Friend::new,
@@ -30,6 +34,9 @@ public class SpookyRegistry {
 					.updateInterval(2)
 					.noLootTable()
 	);
+
+	public static final Supplier<AttachmentType<FakeSteps>> FAKE_STEPS = ATTACHMENT_TYPES.register(
+			"fake_steps", () -> AttachmentType.builder(FakeSteps::new).build());
 
 	@SubscribeEvent
 	public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
