@@ -4,7 +4,11 @@
 # Spooky Friends #
 
 ## About ##
-Adds fake players that act like players to spook out players. Think placing blocks fighting imaginary mobs...
+Adds fake players that act like players to spook out players.
+The Friends can currently:
+* Place blocks (They have a chance to spawn with blocks in their off-hand)
+* Act as if they are fighting a mob (with sound)
+* Stare at the player and when stared back start walking away
 
 This mod was made for SpookyJam 2026
 
